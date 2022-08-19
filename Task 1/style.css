@@ -1,0 +1,13 @@
+body {
+    background-color: coral;
+}
+
+#my_id {
+    color: white;
+    text-align: center;
+}
+
+.my_class {
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+}
