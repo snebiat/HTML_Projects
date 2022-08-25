@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Input Types
+    </title>
+    </head>
+    <style>
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+table, td {
+    border: 1px solid #333;
+    border-collapse: collapse;
+    padding: 10px;
+}
+table {
+    margin: 20px;
+}
+thead {
+    background: coral;
+    color: white;
+}
+.center {
+    text-align: center;
+    background: #ebebeb;
+    font-weight: 500;
+}
+    </style>
+    <body>
+<table>
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th>Input Example</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>type = "button"</td>
+            <td><input type="button" value="clickme" /></td>
+            <td>needs a value attribute</td>
+        </tr>
+        <tr>
+            <td>type="checkbox"</td>
+            <td><input type="checkbox">checkbox</td>
+            <td>texxt comes after the tag</td>
+        </tr>
+        <tr>
+            <td>type=color</td>
+            <td><input type="color" value="#54fe32"/></td>
+            <td>color picker and default can be set with value attribute</td>
+        </tr>
+        <tr>
+            <td>type=range</td>
+            <td><input type="range" min="0" max="200" step="50" /></td>
+            <td>numeric restrictions with min and max attributes</td>
+        </tr>
+        <tr>
+            <td>type=text</td>
+            <td><input type="text"/></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>type=month</td>
+            <td><input type="month"/></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>type=search</td>
+            <td><input type="search"/></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>type=number</td>
+            <td><input type="number" min="1" max="10"/></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="center" colspan="3">Select and textarea :</td>
+        </tr>
+        <tr>
+            <td>type=select</td>
+            <td><select size="4">
+                <option>opt 1</option>
+                <option>opt 1</option>
+                
+            </select></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>type=datalist</td>
+            <td><input >
+                <datalist size="4">
+                <option>opt 1</option>
+                <option>opt 1</option>
+                
+            </datalist></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>type=selectarea</td>
+            <td><textarea rows="5"></textarea></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+    </body>
+</html>

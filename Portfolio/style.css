@@ -16,3 +16,24 @@ body {
 .h1{
     text-align: center;
 } 
+
+/* Table */
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 200px;
+    padding: 15px;
+}
+thead {
+    font-weight: bold;
+    background: #333;
+    color: white;
+}
+tbody {
+    color: #333;
+}
+tbody td {
+    border-bottom: 1px solid #333;
+}
