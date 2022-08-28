@@ -1,0 +1,30 @@
+body {
+    background: rgb(15, 77, 15);
+    
+}
+.loginhere {
+    color: white;
+}
+.div_signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    background: white;
+    border-radius: 5px;
+}
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input {
+    width: 250px;
+}
+button {
+    background-color: orange;
+    border-radius: 5px;
+}
+#signup {
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+}
