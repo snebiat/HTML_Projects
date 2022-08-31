@@ -1,30 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Petrona:wght@300;400&display=swap');
+
 body {
-    background: rgb(15, 77, 15);
-    
+    background: rgb(9, 75, 52);
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
 }
-.loginhere {
-    color: white;
+label {
+    font-size: 10px;
 }
-.div_signup {
+form {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+a {
+    color: rgb(238, 106, 12);
+}
+#container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
-    background: white;
-    border-radius: 5px;
-}
-label {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 input {
-    width: 250px;
+    margin: 0.5rem 0;
+    padding: 0.3rem;
+    width: 15rem;
+}
+#content {
+    width: 300px;
+    padding: 1rem;
+    
+}
+#login {
+    text-align: left;
+    padding-top: 1rem;
+}
+input {
+    padding: 0.5rem;
 }
 button {
-    background-color: orange;
+    font-family: inherit;
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    padding: 0.3rem;
+    background-color: rgb(238, 106, 12);
     border-radius: 5px;
+    color: white;
+    width: 13rem;
+    border: unset;
 }
-#signup {
-    font-size: medium;
-    font-weight: bold;
-    color: black;
+div>p {
+    color: white;
+    text-align: center;
 }
+
+

@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <label id="signup">Sign Up</label>
-        <label>It's free and only takes a minute</label>
-        <div class="div_signup">
-            
-            <form action="">
-                    <label for="firstname">First Name</label>
-                    <input type="text" id="firstname"/>
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname"/>
-                    <label for="email">Email</label>
-                    <input type="email" id="email"/>
-                    <label for="password">Password</label>
-                    <input type="password" id="password"/>
-                    <label for="conf_password">Confirm Password</label>
-                    <input type="password" id="conf_password"/>
-                    <button type="submit">SIGN UP</button>
-                    <label>By clicking the Sign Up button, you agree to our <a href="">Terms & Conditions</a> and <a href="">Privacy Policy</a></label>
+<html lang="en">
+<head>
+   
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <form>
+                <div>
+                    <h1>Sign Up</h1>
+                    <span>It's free and only takes a minute</span>
+                </div>
+                <div id="login">
+                    <div>
+                        <label for="firstname">First Name</label><br>
+                        <input type="text" id="firstname"/>
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label><br>
+                        <input type="text" id="lastname"/>
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email"/>
+                    </div>        
+                    <div>
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password"/>
+                    </div>  
+                    <div>
+                        <label for="conf_password">Confirm Password</label><br>
+                        <input type="password" id="conf_password"/>
+                    </div>    
+                </div>
+                <button type="submit">SIGN UP</button>
+                <p>By clicking the Sign Up button, you agree to our <a href="">Terms & Conditions</a> and <a href="">Privacy Policy</a></p>
             </form>
         </div>
-        <div class="loginhere">
-            <label>Already have an account?</label>
-            <a href="">Login Here</a>
-        </div>
-    </body>
+    </div>
+    <div>
+        <p>Already have an account? <a href="">Login Here</a></p>
+    </div>
+</body>
 </html>
+
