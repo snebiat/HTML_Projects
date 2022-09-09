@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+header {
+    display: flex;
+    align-items: center; /*center the items in center vertically*/
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+.logo {
+    flex : 3; /*flex is used to arrange elments by dividing the space*.. so this means take 3 spaces to the left for the logo Enable the background color below to test this
+    
+    background-color: antiquewhite;*/
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    flex: 1;
+}
+a {
+    color: white;
+    text-decoration: none; /*this will delete the underline which is default for links*/
+    text-transform: uppercase;
+    padding: 1rem;
+    margin: 1rem;
+}
+a:hover {
+    border-bottom: 6px solid rgb(57, 82, 57);
+}
+main {
+    display: flex;
+    height: 100vh;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(57, 82, 57);
+    flex: 1;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse; /*the popped boxes go to the right because it is reverse*/
+    align-content: flex-start; /*boxes are at the top and if it was flex-end, it will be on the bottom*/
+    height: 100vh;
+    background-color: rgb(139,172,145);
+    flex: 4;
+
+}
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    margin: 1rem; /*this makes it to pop the 6th box and any others to be down when the size of the screen changes... try chaning it to 10px for testing */
+    border-radius: 5px;
+   /*  border: 1px solid black; */
+    display: flex; /*no actual need of flex as there is nothing visually to be aligned in the box but we use this to align the text inside in center(horizontally and vertically) and use the next two lines as they only work in flex
+    justify-content: center;
+    align-items: center; */
+    justify-content: center;
+    align-items: center;
+} 

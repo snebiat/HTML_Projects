@@ -1,0 +1,47 @@
+body {
+    background-color: burlywood;
+}
+section {
+    min-height: 25vh;
+}
+#header {
+background-color: red;
+}
+#main {
+background-color: blue;
+}
+#main2 {
+    background-color: brown;
+}
+#main3 {
+    background-color: aqua;
+    
+}
+
+.cards {
+    display: flex;
+
+}
+.card {
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    width: 33%;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card h3,
+.card p,
+.card a {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .card {
+        background-color: #333;
+        color: red;
+    }
+}
