@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Noto+Sans&family=Petrona:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: skyblue;
+    font-family: 'Petrona', serif;
+}
+.grid-container {
+    display: grid;
+    margin: 0 auto;
+    background-color: #b3b3b3;
+    grid-template-columns: 2fr 2fr 2fr; /* not to stack the items on top of each other and how much space they take like assigning flex:4 in flex */ /* this can also be written as repeat(3, 2fr) */
+    grid-template-rows: 100px 200px 50px 100px;
+    grid-gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.item {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.item:first-child {
+    background: green;
+    grid-column: 1 / span 2; /* this can be also written like 1 / 3 meaning start from 1 until 3 or take span of 2 columns */
+    grid-row: 1 /  span 2;
+}
+
+.item:last-child { /* we created 4 rows (line 18) but when the first child takes span of 2 (line 30) , it automatically created 5th row and the last child is on the fifth row now */
+    background: yellow;
+    grid-column: 1 / span 3;
+}
+
+.areas-container {
+    display: grid;
+    grid-template-areas: 
+    "header_area header_area header_area header_area"
+    "left_area main_area main_area aside_area"
+    "left_area main_area main_area aside_area"
+    ". main_area main_area aside_area" /* ommiting the . breaks everything (you can use . or just write some random text that doesn't exist as an area name) because we have to indicate that there is a row but we want to skip it */
+    "footer_area footer_area footer_area footer_area ";
+    grid-gap: 0.4rem;
+    grid-auto-rows: 1fr;
+}
+
+.header {
+    grid-area: header_area;
+    background: green;
+    padding: 1rem;
+    min-height: 100px;
+}
+
+.left {
+    grid-area: left_area;
+    background: blue;
+}
+
+.main {
+    grid-area: main_area ;
+    background: pink;
+}
+
+.aside {
+    grid-area: aside_area;
+    background: yellow;
+}
+
+.footer {
+    grid-area: footer_area;
+    background: red;
+}

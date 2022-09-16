@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat (6, 1fr) ; /* 2fr repeat(3, 1fr); */
+    grid-template-rows: repeat( 8, 1fr);  /* 50px 200px 100px; */
+    grid-gap: 0.5rem;
+    padding: 1rem;
+}
+.item {
+    min-height: 100px;
+}
+.Stitle {
+    grid-column: 1 / span 3;
+    background: darkkhaki;
+}
+.nav {
+    background: pink;
+}
+.Ptitle {
+    grid-column: 1 / span 5;
+    background: skyblue;
+}
+.item.sidebar {
+    background: rgb(117, 70, 70);
+    grid-row: 2 / span 2;
+    grid-column: 6 / span 1;
+}
+.meta {
+    background: lightgreen;
+    grid-row: 3 / span 5; 
+    grid-column: 1 / span 1; /* No need to define this because the default size is span of 1 cell */
+}
+.content {
+    background: grey;
+    grid-row: 3 / span 2;
+    grid-column: 2 / span 4;
+}
+.ads {
+    background: green;
+    /*grid-column: 6 / span 1; /* No need to define this because the default size is span of 1 cell */
+    grid-row: 4 / span 2;
+}
+.image {
+    background: yellow;
+    grid-column: 2 / span 4;
+    grid-row: 5 / span 3;
+
+}
+.stuff {
+    background: purple;
+    grid-row: 6 / span 2;
+
+}
+.footer {
+    background: burlywood;
+    grid-column: 1 / span 6;
+}
